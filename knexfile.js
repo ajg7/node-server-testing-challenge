@@ -6,7 +6,13 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './dev.sqlite3'
+      filename: './data/nintendo.db3'
+    },
+    migrations: {
+      directory: './migrations'
+    },
+    seed: {
+      directory: "./seeds"
     }
   },
 
@@ -20,9 +26,6 @@ module.exports = {
     pool: {
       min: 2,
       max: 10
-    },
-    migrations: {
-      tableName: 'knex_migrations'
     }
   },
 

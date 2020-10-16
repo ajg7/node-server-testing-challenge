@@ -1,4 +1,4 @@
-const db = require("../data/config");
+const db = require("../config");
 
 module.exports = {
     find,
