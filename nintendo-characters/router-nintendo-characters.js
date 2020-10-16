@@ -17,7 +17,7 @@ router.get('/nintendo', (req, res) => {
 });
 
 
-router.post('/', (req, res) => {
+router.post('/nintendo', (req, res) => {
   const characterData = req.body;
 
   Characters.add(characterData)
@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
 });
 
 
-router.delete('/:id', (req, res) => {
+router.delete('/nintendo/:id', (req, res) => {
   const { id } = req.params;
 
   Characters.remove(id)
